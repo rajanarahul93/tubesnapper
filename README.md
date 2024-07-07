@@ -2,7 +2,8 @@
 
 TubeSnapper is a simple YouTube video downloader web application built using HTML, CSS, and JavaScript. It allows users to enter a YouTube video URL and retrieve download links for various video formats.
 
-![TubeSnapper Preview](img/main.jpg)
+![TubeSnapper Preview]![image](https://github.com/rajanarahul93/tubesnapper/assets/123227543/f30ab2b4-bd46-47e0-a14d-7ab79e09a6b9)
+
 
 ## Features
 
