@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icons/yt.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubeSnapper</title>
+</head>
+
+<body>
+    <div class="toggle-theme">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch">Toggle Theme</label>
+    </div>
+
+    <div class="logo">
+        <img alt="TubeSnapper" src="img/main.jpg">
+    </div>
+
+    <form onsubmit="getData(event)">
+        <div class="bar">
+            <input class="searchbar" type="text" title="Search" placeholder="Enter link here" required>
+            <img src="img/icons/icon_search.svg" type="submit" id="search-button" alt="" onclick="getData(event)">
+        </div>
+    </form>
+
+    <div class="container">
+        <h3 class="center">Your Videos Will Appear Here!</h3>
+    </div>
+
+    <footer>
+        <h4 class="center">&copy; All rights reserved</h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

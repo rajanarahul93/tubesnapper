@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background: #1a1a1a;
+    color: #f8f8f8;
+}
+
+.logo img {
+    display: block;
+    height: 400px;
+    margin: 40px auto;
+    width: 40%;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.bar {
+    margin: 0 auto;
+    width: max-content;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
+    background-color: white;
+    height: max-content;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    animation: slideIn 1s ease-out;
+}
+
+.searchbar {
+    height: 2rem;
+    border: none;
+    width: 60vw;
+    font-size: 16px;
+    outline: none;
+    border-radius: 30px;
+    padding: 7px;
+}
+
+.bar img {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 8px;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease-in;
+}
+
+.item {
+    width: max-content;
+    background-color: #1a1b28;
+    box-shadow: 0 0 9px 0.5px gray;
+    padding: .6px;
+    margin: 10px;
+    text-align: center;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.info {
+    background-color: white;
+    text-align: center;
+    padding: 8px;
+    z-index: 20;
+    border-radius: 5px;
+    animation: zoomIn 0.5s ease-in-out;
+}
+
+.name {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 13rem;
+}
+
+.thumbnail {
+    width: 15rem;
+    object-fit: contain;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.action a {
+    text-decoration: none;
+}
+
+.down-icon {
+    width: 1.9rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.down-icon:hover {
+    transform: scale(1.2);
+}
+
+.center {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.theme-label {
+    margin-left: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .thumbnail {
+        width: 12rem;
+    }
+
+    .logo img {
+        width: 60vw;
+    }
+
+    .searchbar {
+        width: 70vw;
+    }
+}
