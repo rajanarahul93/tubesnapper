@@ -47,7 +47,7 @@ Contributions are welcome! Please follow these steps:
 
 ## Credits
 
-- Built by [Your Name](https://github.com/rajanarahul93).
+- Built by [Rahul](https://github.com/rajanarahul93).
 - YouTube Download API powered by [RapidAPI](https://rapidapi.com/).
 
 ## License
